@@ -37,7 +37,7 @@ h1 {
 }
 .link {
     font-weight: bold;
-    background-image: linear-gradient(90deg, #00ff00, #00cc66);
+    background-image: linear-gradient(90deg, #333333, #cccccc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 1.5em;
