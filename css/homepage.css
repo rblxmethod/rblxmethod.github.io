@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600&display=swap');
 
 html {
     scroll-behavior: smooth;
 }
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lexend', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,6 +16,7 @@ body {
     overflow-y: auto;
     scroll-behavior: smooth;
     position: relative;
+    cursor: none;
 }
 #vanta-bg {
     position: fixed;
@@ -87,4 +88,11 @@ h1 {
 .fullscreen-img.active {
     opacity: 1;
     visibility: visible;
+}
+.kursor {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    mix-blend-mode: difference;
 }
