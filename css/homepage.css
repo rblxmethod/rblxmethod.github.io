@@ -15,7 +15,6 @@ body {
     text-align: center;
     flex-direction: column;
     overflow-y: auto;
-    scroll-behavior: smooth;
     position: relative;
     cursor: none;
 }
@@ -92,8 +91,8 @@ h1 {
 }
 
 .kursor {
-    width: 0px;
-    height: 0px;
+    width: 4px;
+    height: 4px;
     background-color: white;
     border-radius: 50%;
     mix-blend-mode: difference;
