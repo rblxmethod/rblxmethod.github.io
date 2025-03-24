@@ -3,6 +3,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: 'Lexend', sans-serif;
     display: flex;
@@ -18,6 +19,7 @@ body {
     position: relative;
     cursor: none;
 }
+
 #vanta-bg {
     position: fixed;
     top: 0;
@@ -26,16 +28,19 @@ body {
     height: 100%;
     z-index: -1;
 }
+
 h1 {
     font-size: 2.5em;
     font-weight: 600;
 }
+
 .description {
     font-size: 1.2em;
     font-weight: 300;
     max-width: 600px;
     margin-top: 10px;
 }
+
 .link {
     font-weight: bold;
     background-image: linear-gradient(90deg, #333333, #cccccc);
@@ -47,13 +52,16 @@ h1 {
     margin: 15px 0;
     transition: 0.3s;
 }
+
 .link:hover {
     transform: scale(1.1);
 }
+
 .image-container {
     margin-top: 15px;
     cursor: pointer;
 }
+
 .image-container img {
     width: 400px;
     border-radius: 15px;
@@ -62,10 +70,12 @@ h1 {
     transform: translateY(30px);
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
+
 .image-container img.show {
     opacity: 1;
     transform: translateY(0);
 }
+
 .fullscreen-img {
     position: fixed;
     top: 0;
@@ -80,15 +90,18 @@ h1 {
     visibility: hidden;
     transition: opacity 0.3s ease-in-out;
 }
+
 .fullscreen-img img {
     max-width: 90%;
     max-height: 90%;
     border-radius: 10px;
 }
+
 .fullscreen-img.active {
     opacity: 1;
     visibility: visible;
 }
+
 .kursor {
     width: 4px;
     height: 4px;
