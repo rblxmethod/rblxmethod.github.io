@@ -1,6 +1,6 @@
-document.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("load", function () {
     new kursor({
-        type: 'dot',
+        type: "dot",
         removeDefaultCursor: true
     });
 });
