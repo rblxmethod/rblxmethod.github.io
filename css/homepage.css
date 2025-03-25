@@ -50,6 +50,7 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     opacity: 1;
     transform: translateY(0);
+    cursor: pointer;
 }
 .fullscreen-img {
     position: fixed;
@@ -64,6 +65,7 @@ h1 {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease-in-out;
+    z-index: 9999;
 }
 .fullscreen-img img {
     max-width: 90%;
