@@ -30,9 +30,7 @@ h1 {
 }
 .link {
     font-weight: bold;
-    background-image: linear-gradient(90deg, #333333, #cccccc);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: white;
     font-size: 1.5em;
     display: inline-block;
     text-decoration: none;
@@ -77,20 +75,20 @@ h1 {
     visibility: visible;
 }
 .problems-text {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bold;
     color: rgba(255, 255, 255, 0.8);
     position: fixed;
     bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: float 3s ease-in-out infinite;
+    left: 20px;
     background: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    border-radius: 10px;
+    padding: 8px 15px;
+    border-radius: 8px;
 }
-@keyframes float {
-    0% { transform: translateX(-50%) translateY(0px); }
-    50% { transform: translateX(-50%) translateY(-10px); }
-    100% { transform: translateX(-50%) translateY(0px); }
+.problems-link {
+    color: #8ecae6;
+    text-decoration: none;
+}
+.problems-link:hover {
+    text-decoration: underline;
 }
