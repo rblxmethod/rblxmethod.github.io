@@ -1,20 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll(".image-container").forEach(container => {
-        const img = container.querySelector("img");
-        if (img) {
-            img.addEventListener("click", () => openFullscreen(img));
-        }
+    const images = document.querySelectorAll(".image-container img");
+    const fullscreenImg = document.getElementById("fullscreenImg");
+    const fullscreenImgSrc = document.getElementById("fullscreenImgSrc");
+
+    images.forEach(img => {
+        img.addEventListener("click", () => openFullscreen(img));
     });
 
-    const fullscreenImg = document.getElementById("fullscreenImg");
     if (fullscreenImg) {
         fullscreenImg.addEventListener("click", closeFullscreen);
     }
 });
 
 function openFullscreen(img) {
-    const fullscreenImgSrc = document.getElementById("fullscreenImgSrc");
     const fullscreenImg = document.getElementById("fullscreenImg");
+    const fullscreenImgSrc = document.getElementById("fullscreenImgSrc");
 
     if (fullscreenImg && fullscreenImgSrc) {
         fullscreenImgSrc.src = img.src;
