@@ -1,22 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const images = document.querySelectorAll(".image-container img");
-    const fullscreenImg = document.getElementById("fullscreenImg");
-    const fullscreenImgSrc = document.getElementById("fullscreenImgSrc");
-
-    if (images.length > 0) {
-        images.forEach(img => {
+    document.querySelectorAll(".image-container").forEach(container => {
+        const img = container.querySelector("img");
+        if (img) {
             img.addEventListener("click", () => openFullscreen(img));
-        });
-    }
+        }
+    });
 
+    const fullscreenImg = document.getElementById("fullscreenImg");
     if (fullscreenImg) {
         fullscreenImg.addEventListener("click", closeFullscreen);
     }
 });
 
 function openFullscreen(img) {
-    const fullscreenImg = document.getElementById("fullscreenImg");
     const fullscreenImgSrc = document.getElementById("fullscreenImgSrc");
+    const fullscreenImg = document.getElementById("fullscreenImg");
 
     if (fullscreenImg && fullscreenImgSrc) {
         fullscreenImgSrc.src = img.src;
@@ -25,9 +23,5 @@ function openFullscreen(img) {
 }
 
 function closeFullscreen() {
-    const fullscreenImg = document.getElementById("fullscreenImg");
-    
-    if (fullscreenImg) {
-        fullscreenImg.classList.remove("active");
-    }
+    document.getElementById("fullscreenImg")?.classList.remove("active");
 }
